@@ -47,9 +47,9 @@ public class Hibernate {
     }
 
 
-    public static SessionFactory getFACTORY() { return FACTORY; }
+    public static SessionFactory getFactory() { return FACTORY; }
     public static void main(String[] args) {
-        try (Session session = getFACTORY().openSession()) {
+        try (Session session = getFactory().openSession()) {
             System.out.println(">>> KẾT NỐI HIBERNATE THÀNH CÔNG! <<<");
         } catch (Exception e) {
             System.out.println(">>> KẾT NỐI THẤT BẠI: " + e.getMessage());
